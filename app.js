@@ -42,9 +42,9 @@ app.get('/login_failed', (req, res) => {
 
 // Iniciar o servidor
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-    console.log(`Servidor rodando na porta ${PORT}`);
-});
+// app.listen(PORT, () => {
+//     console.log(`Servidor rodando na porta ${PORT}`);
+// });
 
 // Rota para processar o formulário de login
 app.post('/login', (req, res) => {
@@ -98,5 +98,5 @@ app.get('/lista/json', (req, res) => {
 });
 
 
-
+module.exports = app;
 
